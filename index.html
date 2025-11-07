@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header
+      class="container-fluid border border-2 d-flex flex-wrap justify-content-between align-items-center gap-5 gap-sm-5"
+    >
+    
+      <div class="logo">
+        <img
+          class="border border-3 rounded-circle"
+          src="images/images.png" 
+          alt="logo image"
+        />
+      </div>
+      <div>
+        <nav class="nav d-none d-sm-block">
+          <ul class="nav gap-2">
+                   <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="">
+        <button>Cart</button>
+        <button>Signup</button>
+        <button>Login</button>
+      </div>
+      
+    </header>
+    <!-- header end -->
+
+    <div class="text-center mt-5 mt-sm-3">
+      <hgroup>
+       <h1>Latest Products</h1>
+        <h6>Explore our latest products and get the best deals here</h6>
+<div class="social-icons" style="position:absolute; top:120px; right:40px; font-size:28px;">
+  <a href="https://facebook.com" target="_blank" style="color:blue; margin-right:10px;"><i class="fa-brands fa-facebook"></i></a>
+  <a href="https://instagram.com" target="_blank" style="color:palevioletred; margin-right:10px;"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://wa.me/923001234567" target="_blank" style="color:greenyellow; margin-right:10px;"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="https://youtube.com" target="_blank" style="color:red;"><i class="fa-brands fa-youtube"></i></a>
+  <a href="https://linkedin.com" target="_blank" style="color:blue;"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+      </hgroup>
+    </div>
+    <section class="section">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active images">
+            <img
+              src="images/D-Banner-02.webp"
+              class="d-block w-100"
+              alt="Banner Image"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Swiss Dive Edition</h5>
+              <p>Built for depth. Designed for elegance.</p>
+            </div>
+          </div>
+          <div class="carousel-item images">
+            <img
+              src="images/Desktop-02-copy.webp"
+              class="d-block w-100"
+              alt="Banner Image"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Skeleton Masterpiece</h5>
+              <p>
+                The art of time — see every movement.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item images">
+            <img
+              src="images/Desktop-05-copy.webp"
+              class="d-block w-60"
+              alt="Banner Image"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Classic Formal Watch</h5>
+              <p>
+                Elegance for every occasion.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- section end -->
+    <h1 class="text-center">Brand We love <br>
+                            New Arrivals
+    </h1>
+<!--    cards -->
+<div class="d-flex flex-wrap gap-7 container-fluid mx-auto">
+    <div class="card mt-3" style="width: 18rem">
+      <span class="onsale">-15%</span>
+      <img
+        src="images/BF2026-89a.webp"
+        class="card-img-top"
+        alt="card image"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Citizen BF2026-89A  Metal Band </h5>
+         <p class="card-text">  Men's Watch</p>
+          <span class="price"><del aria-hidden="true"></del><span class="woocommerce-Price-currencySymbol">₨48,700</span></bdi>
+           <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">₨57,200<bdi></span></del> 
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card mt-3" style="width: 18rem">
+      <img
+        src="images/BF2021-82L.webp"
+        class="card-img-top"
+        alt="card image"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Citizen BF2021-82L Metal Band</h5>
+        <p class="card-text">  Men's Watch</p><br>
+         <span class="price"><del aria-hidden="true"></del><span class="woocommerce-Price-currencySymbol">₨520,000</span></bdi>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card mt-3" style="width: 18rem">
+      <span class="onsale">-15%</span>
+      <img
+        src="images/R12160103.webp"
+        class="card-img-top"
+        alt="card image"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Rado R12160103 Daister Orginal</h5>
+         <p class="card-text"> Automatic Men Watch</p>
+             <span class="price"><del aria-hidden="true"></del><span class="woocommerce-Price-currencySymbol">₨42,700</span></bdi>
+           <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">₨50,200<bdi></span></del>
+       
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card mt-3" style="width: 18rem">
+       <span class="onsale">-15%</span>
+      <img
+        src="images/NY0120-01E-1.webp"
+        class="card-img-top"
+        alt="card image"
+      />
+  
+      <div class="card-body">
+        <h5 class="card-title">Citizen NY0120-01E-1 Promaster Rubber Band</h5>
+         <p class="card-text">Men's Watch</p>
+          <span class="price"><del aria-hidden="true"></del><span class="woocommerce-Price-currencySymbol">₨114,800</span></bdi>
+           <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">₨135,000<bdi></span></del>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card mt-3" style="width: 18rem">
+        <span class="onsale">-15%</span>
+      <img
+        src="images/CA4590-81L-1.webp"
+        class="card-img-top"
+        alt="card image"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Citizen CA4590-81L-1 Metal Band</h5>
+        <p class="card-text">Men Watch</p>
+           <span class="price"><del aria-hidden="true"></del><span class="woocommerce-Price-currencySymbol">₨100,300</span></bdi>
+           <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">₨118,000<bdi></span></del>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card mt-3" style="width: 18rem">
+     <span class="onsale">-15%</span> 
+      <img
+        src="images/BI1036-57A.webp"
+        class="card-img-top"
+        alt="card image"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Citizen BL1036-57A Metal Band</h5>
+        <p class="card-text">Men Watch</p><br>
+           <span class="price"><del aria-hidden="true"></del><span class="woocommerce-Price-currencySymbol">₨46,800</span></bdi>
+           <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">₨55,00<bdi></span></del>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card mt-3" style="width: 18rem">
+      <img
+        src="images/T149.417.22.051.01-1.webp"
+        class="card-img-top"
+        alt="card image"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Tissot T149.417.22.051.01 PR516</h5>
+        <p class="card-text">Metal Band Men Watch</p><br>
+          <span class="price"><del aria-hidden="true"></del><span class="woocommerce-Price-currencySymbol">₨215,000</span></bdi><br>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card mt-3" style="width: 18rem">
+      <img
+        src="images/T150.210.33.021.00-1.webp"
+        class="card-img-top"
+        alt="card image"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Tissot T150.210.33.021.00 PR100</h5>
+        <p class="card-text">Metal Band Women Watch</p><br>
+           <span class="price"><del aria-hidden="true"></del><span class="woocommerce-Price-currencySymbol">₨149,900</span></bdi><br>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card mt-3" style="width: 18rem">
+      <span class="onsale">-15%</span>
+      <img
+        src="images/NJ0191-83E-1.webp"
+        class="card-img-top"
+        alt="card image"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Citizen N J0191-83E Metal Band</h5>
+        <p class="card-text">Men Watch</p><br>
+             <span class="price"><del aria-hidden="true"></del><span class="woocommerce-Price-currencySymbol">₨93,500</span></bdi>
+           <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">₨110,000<bdi></span></del>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card mt-3" style="width: 18rem">
+      <span class="onsale">-15%</span>
+      <img
+        src="images/BH5001-05H.webp"
+        class="card-img-top"
+        alt="card image"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Citizen BH5001-05H Leather Band</h5>
+        <p class="card-text">Men Watch</p><br>
+                <span class="price"><del aria-hidden="true"></del><span class="woocommerce-Price-currencySymbol">₨37,400</span></bdi>
+           <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">₨44,000<bdi></span></del>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+</div>
+
+<style>
+  .customer-heading {
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .review-box {
+    background: #fff;
+    padding: 30px 15px;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    min-height: 180px;
+    transition: 0.3s;
+  }
+  .review-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  .stars {
+    font-size: 20px;
+    color: #f4b400;
+  }
+  .review-name {
+    font-size: 14px;
+    color: #777;
+    margin-top: 8px;
+  }
+</style>
+<!-- customer reveiw start -->
+<section class="container my-5">
+  <h3 class="text-center customer-heading mb-4">CUSTOMER REVIEWS</h3>
+
+  <div class="row g-4 text-center justify-content-center">
+    <div class="col-md-3">
+      <div class="review-box shadow-sm">
+        <div class="stars">★★★★★</div>
+        <p class="fw-bold mt-2">It was very good experience</p>
+        <div class="review-name">Usha Ch</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="review-box shadow-sm">
+        <div class="stars">★★★★★</div>
+        <p class="fw-bold mt-2">Best price, original product</p>
+        <div class="review-name">Waqas A Qureshi</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="review-box shadow-sm">
+        <div class="stars">★★★★★</div>
+        <p class="fw-bold mt-2">Quality is good & fast delivery</p>
+        <div class="review-name">Sodi Nasir</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="review-box shadow-sm">
+        <div class="stars">★★★★★</div>
+        <p class="fw-bold mt-2">Good and original variety</p>
+        <div class="review-name">Aasim Salim</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- customer review end -->
+
+<section class="py-4 text-white" style="background:#00A99D;">
+  <div class="container d-flex justify-content-around text-center flex-wrap">
+    <div>
+      <strong>FAST SHIPPING</strong><br>
+      <small>Delivery in 24 Hours</small>
+    </div>
+    <div>
+      <strong>24/7 SUPPORT</strong><br>
+      <small>Help desk</small>
+    </div>
+    <div>
+      <strong>100% SAFE</strong><br>
+      <small>Secure Online Payment</small>
+    </div>
+    <div>
+      <strong>PAYMENT METHOD</strong><br>
+      <small>Visa / Master</small>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="text-white pt-5 pb-3" style="background:#000;">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-md-4">
+        <h5 class="mb-2">ABDULLAH</h5>
+        <small class="text-secondary">
+          Liberty Round About Lahore<br>
+          Ph: 0311-3333978<br>
+          Email: info@example.com
+        </small>
+      </div>
+
+      <div class="col-md-2">
+        <h6 class="fw-bold">INFORMATION</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-secondary text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <h6 class="fw-bold">QUICK LINKS</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-secondary text-decoration-none">Track Order</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Brands</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Payment Method</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h6 class="fw-bold">FOLLOW US</h6>
+        <div class="d-flex gap-3 small">
+          <a href="#" class="text-secondary text-decoration-none">Facebook</a>
+          <a href="#" class="text-secondary text-decoration-none">Instagram</a>
+          <a href="#" class="text-secondary text-decoration-none">YouTube</a>
+        </div>
+      </div>
+
+    </div>
+    <hr class="border-secondary mt-4">
+    <p class="text-center small text-secondary mb-0">
+      © 2025 ABDULLAH | All Rights Reserved
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
